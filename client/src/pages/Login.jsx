@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import {CameraIcon, ProfileIcon} from '../assets/HeroIcons.jsx'
+import { ProfileIcon} from '../assets/HeroIcons.jsx'
+import CameraUpload from '../components/CameraUpload.jsx';
 
 const Login = () => {
     const [isLogin, setIsLogin] = useState(true);
@@ -35,11 +36,13 @@ const Login = () => {
                             <ProfileIcon />
                         </div>
 
+
                         <div className=' absolute bottom-2 right-2' type="file" >
-                               <CameraIcon>
-                                <input type="file" src="" alt="" />
-                                </CameraIcon> 
+                            <CameraUpload/> 
                         </div>
+
+                        
+
                         </>
 
                         <div className='border-0 h-1 m-[-10px] overflow-hidden p-0 absolute flex-nowrap w-1'></div>
